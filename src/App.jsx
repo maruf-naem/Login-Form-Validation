@@ -1,9 +1,9 @@
-import Form from "./Form";
+import LoginForm from "./Login";
 
 function App() {
   return (
     <div>
-      <Form />
+      <LoginForm />
     </div>
   );
 }

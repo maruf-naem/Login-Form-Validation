@@ -1,10 +1,10 @@
 import { useActionState } from "react";
 
-function Form() {
+function LoginForm() {
   async function validateData(preData, currenData) {
-    await new Promise((resolve)=>{
-      setTimeout(resolve, 1000)
-    })
+    await new Promise((resolve) => {
+      setTimeout(resolve, 1000);
+    });
     let email = currenData.get("email");
     let pass = currenData.get("password");
     let emailTest = /^[a-zA-Z0-9.%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
@@ -61,4 +61,4 @@ function Form() {
   );
 }
 
-export default Form;
+export default LoginForm;
