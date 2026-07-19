@@ -101,3 +101,136 @@ body {
   }
 
 }
+
+
+.registrationForm {
+    max-width: 850px;
+    margin: 50px auto;
+    padding: 40px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    font-family: "Poppins", sans-serif;
+}
+
+.registrationForm h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+.registrationForm hr {
+    margin-bottom: 35px;
+    border: none;
+    border-top: 1px solid #ddd;
+}
+
+/* Every section */
+.registrationForm form>div,
+.registrationForm fieldset {
+    margin-bottom: 25px;
+}
+
+/* Labels */
+.registrationForm label,
+.registrationForm legend {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Inputs beside each other */
+.registrationForm form>div>div {
+    display: flex;
+    gap: 20px;
+}
+
+/* Inputs & Select */
+.registrationForm input,
+.registrationForm select {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #d8d8d8;
+    border-radius: 6px;
+    font-size: 15px;
+    outline: none;
+    transition: .3s;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+.registrationForm input:focus,
+.registrationForm select:focus {
+    border-color: #ffb35c;
+    box-shadow: 0 0 0 3px rgba(255, 179, 92, .2);
+}
+
+/* Address fields stack */
+.registrationForm > form > div:nth-of-type(3) {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Gender */
+.registrationForm fieldset {
+    border: none;
+    padding: 0;
+}
+
+.registrationForm fieldset label {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-right: 40px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.registrationForm fieldset input[type="radio"] {
+    width: auto;
+    margin: 0;
+}
+
+/* Submit Button */
+.registrationForm button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 6px;
+    background: #ffb35c;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.registrationForm button:hover {
+    background: #f39c38;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+
+    .registrationForm {
+        padding: 25px;
+    }
+
+    .registrationForm form>div>div {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .registrationForm h1 {
+        font-size: 1.8rem;
+    }
+
+    .registrationForm fieldset label {
+        display: flex;
+        margin-bottom: 15px;
+    }
+}
